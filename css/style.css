@@ -194,7 +194,7 @@ section .container{
    height:100px;
    width:100px;
    background-size: cover;
-   background-position: center;
+   background-position: center/cover;
    background-image: url('../images/pexels-ava-motive-1097781.jpg');
     border:3px solid #fff;
 }
@@ -203,7 +203,7 @@ section .container{
     height:100px;
     width:100px;
     background-size: cover;
-    background-position: center;
+    background-position: center/cover;
     background-image: url('../images/pexels-daniel-xavier-1239291.jpg');
     border:3px solid #fff;
    }
@@ -244,6 +244,9 @@ section .container{
 
 
 @media(max-width:500px){
+    .testimony__title h2{
+        font-size: 26px;
+    }
     .header{
         padding:0.8rem 0rem;
     }
@@ -270,6 +273,28 @@ section .container{
 
     footer{
         padding:0.8rem;
+    }
+
+
+
+
+
+
+    .about .reason .icon {
+        height:90px;
+        width:90px;
+       
+    }
+    
+    .about .reason .icon i{
+        font-size:43px;
+    }
+    .reason h4{
+        font-size: 20px;
+    }
+    
+    .reason p{
+        font-size: 14px;
     }
 }
 
