@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 95%;
+}
+
+body{
+    font-family: Roboto;
+
+}
+
+.header{
+    width:100%;
+    position: sticky;
+    top:0;
+    padding:1rem 1.8rem;
+    z-index:100;
+    background:#fff;
+}
+
+.header .container{
+    max-width:80%;
+    margin:auto;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.banner{
+    background-image: url('../images/1.jpg');
+    /* height: 100vh; */
+    background-position: center/top;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+     color:#fff;
+     z-index:1;
+     padding:2rem 2rem;
+}
+
+.banner::after{
+    content:"";
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(95, 55, 55, 0.3);
+    z-index:-1;
+}
+
+section .container{
+    width:80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner__left{
+    margin:20px auto 60px auto;
+}
+
+.banner__left h1{
+    font-size: 50px;
+    padding-bottom: 0.6rem;
+    line-height:45px;
+}
+.banner p{
+    font-family: Poppins;
+}
+.banner__right{
+    background:rgba(0,0,0,0.7);
+    padding:0.8rem 1.2rem;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+    border-radius: 5px;
+}
+
+.banner__right h3{
+    font-size: 24px;
+    padding-bottom: 0.5rem;
+}
+
+.banner__right p{
+    padding-bottom:0.5rem;
+}
+
+.banner__right form{
+    margin-top: 15px;
+}
+.banner__right input{
+    display:block;
+    margin-bottom: 20px;
+    border:none;
+    outline:none;
+    padding:1rem;
+    width:400px;
+    border-radius: 3px;
+    font-size:15px;
+    
+}
+
+.banner__right input[type="submit"]{
+    font-family: Poppins;
+    cursor:pointer;
+    color:#fff;
+    background-color:rgba(0,200,0,0.9);
+    transition: background 0.3s ease-in;
+    font-size: 17px;
+    padding:0.8rem 1rem;
+
+}
+
+.banner__right input[type="submit"]:hover{
+    background-color:rgba(0, 200, 0, 0.56);
+}
+
+
+
+.about{
+    padding:2.5rem 1.5rem;
+}
+
+.about .reason{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items:center; */
+    margin-bottom: 30px;
+}
+
+.about .reason .icon {
+    height:100px;
+    width:100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background:#eee;
+    border-radius: 50%;
+    margin-bottom:15px;
+}
+
+.about .reason .icon i{
+    color:#17a2b8;
+    font-size:50px;
+}
+.reason h4{
+    padding-bottom: 0.4rem;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.reason p{
+    font-family: Poppins;
+    font-size: 15px;
+}
+
+.testimony{
+    padding:2.5rem;
+    background:#ddd;
+    
+}
+.test{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.testimony .testimony__title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.testimony__title h2{
+    font-family: Poppins;
+    font-size: 30px;
+}
+
+.test .image__container{
+   border-radius: 50%;
+   height:100px;
+   width:100px;
+   background-size: cover;
+   background-position: center;
+   background-image: url('../images/pexels-ava-motive-1097781.jpg');
+    border:3px solid #fff;
+}
+   .test .image__container2{
+    border-radius: 50%;
+    height:100px;
+    width:100px;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../images/pexels-daniel-xavier-1239291.jpg');
+    border:3px solid #fff;
+   }
+   .test .username{
+       padding: 0.8rem 0;
+   }
+
+
+   .test .text{
+       padding-top:0.9rem;
+       text-align: center;
+       border-top: 1px solid rgba(0,0,0,0.23);
+   }
+
+   .test .text p{
+       font-style: italic;
+       font-family: Poppins;
+       font-size: 15px;
+   }
+
+   .testimony__icon{
+      padding: 0.8rem 0.3rem;
+    
+   }
+   .testimony__icon i{
+       margin-right: 10px;
+       color:rgb(212, 212, 33);
+   }
+
+   footer{
+       padding:1rem 6rem;
+       background:#333;
+       color:#fff;
+   }
+   footer .container{
+       display:block;
+   }
+
+
+@media(max-width:500px){
+    .header{
+        padding:0.8rem 0rem;
+    }
+    .header .container{
+        width: 100% ;
+    }
+    .header h3{
+        font-size:15px;
+    }
+
+    .header__right{
+        font-size: 14px;
+    }
+     section .container{
+         width:100%;
+     }
+    .banner__left h1{
+        font-size: 35px;
+    }
+
+    .banner__right input{
+        width:100%;
+    }
+
+    footer{
+        padding:0.8rem;
+    }
+}
+
+
+@media(min-width:1000px){
+    .banner__left{
+        margin-right: 25px;
+    }
+    section .container{
+        flex-direction: row;
+    }
+
+    .about .reason{
+        align-items: center;
+        margin-right: 15px;
+    }
+    .about .reason p{
+        text-align: center;
+    }
+    .test{
+        width:350px;        
+    }
+
+    .testimony .container  {
+        justify-content: space-between;
+    }
+    
+}
